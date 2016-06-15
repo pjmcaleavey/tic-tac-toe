@@ -29,7 +29,6 @@ class Board
     @spaces[move - 1] = letter
   end
 
-
   def legal_moves
     available_spaces = []
     @spaces.map do |spot|
