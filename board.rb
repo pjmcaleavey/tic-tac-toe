@@ -54,7 +54,7 @@ class Board
 
   def game_over_message(letter)
     if win?
-      puts "\n\nGreat success! #{letter} is the champion of tic-tac-toe!\n\n"
+      puts "\n\nGreat success! Hooray #{letter}!\n\n"
     elsif
       draw?
       puts "\n\nNot so great X and O. Hang your heads in shame..\n\n"
