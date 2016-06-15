@@ -54,6 +54,15 @@ class TicTacToe
   def start_game
     choose_players
     @tic_tac_toe.play
+      if @tic_tac_toe.play == "X"
+        @x_wins += 1
+      else
+        @o_wins += 1
+      end
+      puts "       SCOREBOARD"
+      puts "======================="
+      puts "       X: #{@x_wins}   O: #{@o_wins}"
+      puts "=======================\n\n"
     play_again
   end
 end

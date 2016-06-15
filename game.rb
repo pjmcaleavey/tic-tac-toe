@@ -34,5 +34,6 @@ class Game
       switch_player unless @board.game_over?
     end
     @board.game_over_message(@current_player.letter)
+    return @current_player.letter
   end
 end
