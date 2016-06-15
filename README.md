@@ -1,6 +1,6 @@
 ##Tic-Tac-Toe: Object-Oriented Design
 
-This is a working version of tic-tac-toe. The goal of the game is to get three X's or O's in a row. You can win by playing up-and-down, side-to-side, or diagonal.
+This is a working version of Tic-Tac-Toe. The goal of the game is to get three X's or O's in a row. You can win by playing up-and-down, side-to-side, or diagonal.
 
 This program was made using object-oriented design.
 
