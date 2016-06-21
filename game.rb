@@ -28,12 +28,14 @@ class Game
     @board.display_board
     until @board.game_over?
       @available_spaces = @board.legal_moves
-      move = @current_player.pick(@available_spaces.compact)
+      move = @current_player.pick(@available_spaces.compact)##compact removes all nil elements
       @board.update_board(move, @current_player.letter)
       @board.display_board
       switch_player unless @board.game_over?
     end
     @board.game_over_message(@current_player.letter)
+    if @board.win?
     return @current_player.letter
+    end
   end
 end

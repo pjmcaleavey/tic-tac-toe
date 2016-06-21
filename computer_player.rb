@@ -4,7 +4,6 @@ class ComputerPlayer
 
   def initialize(letter)
     @letter = letter
-    @available_spaces = []
   end
 
   def letter

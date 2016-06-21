@@ -53,11 +53,13 @@ class TicTacToe
 
   def start_game
     choose_players
-    @tic_tac_toe.play
-      if @tic_tac_toe.play == "X"
+      final_player = @tic_tac_toe.play
+      if final_player == "X"
         @x_wins += 1
-      else
+      elsif final_player == "O"
         @o_wins += 1
+      else
+        puts "No points for you!\n\n"
       end
       puts "       SCOREBOARD"
       puts "======================="
@@ -66,5 +68,7 @@ class TicTacToe
     play_again
   end
 end
+
+
 tic_tac_toe = TicTacToe.new
 tic_tac_toe.start_game
